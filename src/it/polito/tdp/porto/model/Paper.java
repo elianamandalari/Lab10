@@ -18,6 +18,10 @@ public class Paper {
 		this.types = types;
 	}
 
+	public Paper(int eprintid) {
+		this.eprintid=eprintid;
+	}
+
 	public int getEprintid() {
 		return eprintid;
 	}
@@ -68,8 +72,7 @@ public class Paper {
 
 	@Override
 	public String toString() {
-		return "Paper [eprintid=" + eprintid + ", title=" + title + ", issn=" + issn + ", publication=" + publication
-				+ ", type=" + type + ", types=" + types + "]";
+		return "" +eprintid ;
 	}
 
 }
